@@ -21,6 +21,12 @@ public:
             REAR = 0;
         else
             REAR = REAR + 1
-    
+    }
+    int queue_array [ REAR ] = num;
+
+    void remove(){
+        //cek apakah antrian kosong
     }
 }
+
+    void remove()
