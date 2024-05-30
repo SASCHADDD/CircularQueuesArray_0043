@@ -23,10 +23,21 @@ public:
             REAR = REAR + 1
     }
     int queue_array [ REAR ] = num;
+        
+ }
 
     void remove(){
         //cek apakah antrian kosong
-    }
-}
+        if (FRONT == -1){
+            cout << "Queue underflow\n";
+            return;
+        }
+        cout << "\nThe element deleted from the queue is: " << queue_array[FRONT] << "\n";
 
-    void remove()
+        // cek jika antrian hanya memiliki satu element
+        if (FRONT == REAR){
+            FRONT = 0;
+        else
+            FRONT = FRONT + 1;
+        }
+    }
