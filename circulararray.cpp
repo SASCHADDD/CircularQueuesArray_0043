@@ -15,5 +15,11 @@ public:
         cout << "Enter a number: ";
         cin >> num;
         cout << endl;
+
+        // cek antrian penuh
+        if (REAR == max - 1 )
+            REAR = 0;
+        else
+    
     }
 }
